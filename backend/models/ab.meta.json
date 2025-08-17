@@ -1,0 +1,1 @@
+{"threshold": 4.6134632188823075e-17, "metrics": {"cv_roc_auc": 0.8772222222222222, "cv_avg_precision": 0.5624793881531688}, "features": ["H_mean", "H_std", "H_med", "H_mad", "UD_mean", "UD_std", "UD_med", "UD_mad", "DD_mean", "DD_std", "DD_med", "DD_mad", "char_count", "cadence_ppm", "pause_frac_gt800"]}

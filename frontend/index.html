@@ -1,0 +1,47 @@
+@'
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Keystroke Auth Demo</title>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 2rem; }
+    .box { max-width: 680px; margin-bottom: 1rem; }
+    textarea { width: 100%; min-height: 120px; font-size: 1rem; }
+    button { padding: .6rem 1rem; }
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+  <h1>Keystroke Authentication</h1>
+  <div class="box">
+    <label>Username</label>
+    <input id="username" placeholder="e.g., jawad"/>
+  </div>
+  <div class="box">
+    <label>Type your text (press Enter when done)</label>
+    <textarea id="field" placeholder="Type here..."></textarea>
+  </div>
+  <div class="box">
+    <button id="btn-enroll">Enroll sample</button>
+    <button id="btn-login">Login (score)</button>
+  </div>
+
+  <div id="kba" class="box hidden">
+    <h3>Answer your security questions</h3>
+    <div id="q1"></div>
+    <input id="a1"/>
+    <div id="q2"></div>
+    <input id="a2"/>
+    <div id="q3"></div>
+    <input id="a3"/>
+    <button id="btn-kba">Submit KBA</button>
+  </div>
+
+  <pre id="out"></pre>
+
+  <script src="public/js/capture.js"></script>
+</body>
+</html>
+'@ | Out-File -Encoding UTF8 frontend\index.html
